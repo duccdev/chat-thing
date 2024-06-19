@@ -7,4 +7,6 @@ type Server struct {
 	Clients         []Client
 	MaxMessageSize  uint
 	MaxUsernameSize uint
+	MaxClients      uint
+	CurrentClients  uint
 }
