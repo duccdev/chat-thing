@@ -7,4 +7,4 @@ if [ "$1" = "" ] || [ "$2" = "" ]; then
 fi
 
 set -o xtrace
-GOOS="$1" GOARCH="$2" go build -ldflags="-w -s" -o "build/chat-thing-$GOOS-$GOARCH"
+GOOS="$1" GOARCH="$2" go build -ldflags="-w -s" -o "build/chat-thing-$1-$2"
